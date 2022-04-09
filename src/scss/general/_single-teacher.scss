@@ -1,0 +1,542 @@
+.single-teacher-wrapper {
+    img {
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    h1 {
+        color: $black;
+        padding: 40px 0;
+    }
+
+    p {
+        color: $black;
+    }
+}
+// Plugin's css
+
+.table {
+    margin-top: 40px;
+
+    td {
+        padding: 5px!important;
+
+        &.active {
+            background-color: #3bb85c;
+        }
+
+        &.reserved {
+            background-image: linear-gradient(45deg, #d9d9d9 25%, #cccccc 25%, #cccccc 50%, #d9d9d9 50%, #d9d9d9 75%, #cccccc 75%, #cccccc 100%);
+        }
+    }
+}
+
+.um-modal {
+    bottom: 35% !important;
+}
+
+.um-col-121 {
+    float: left !important;
+    width: 50% !important;
+}
+
+.um-col-122 {
+    float: right !important;
+    width: 50% !important;
+}
+
+.um-register,
+.um-login {
+    max-width: 650px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.um-field{
+    width: 270px !important;
+}
+
+.sign-up-wrapper .row .sign-up-form input {
+    margin: 0 !important;
+}
+
+.um-button {
+    width: 270px !important;
+}
+
+.um-half {
+    width: 50% !important;
+}
+
+.um-register {
+    &::before {
+        content: 'Sign Up';
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        width: 93%;
+        display: inline-block;
+    }
+}
+
+.um-field-radio-state i ,
+.um-field-checkbox-option, 
+.um-field-radio-option{
+    color: #fff !important;
+}
+
+.picker__button--close {
+    display: none !important;
+}
+
+.picker__select--year {
+    margin: 0 auto !important;
+}
+
+@media (min-width: 24.5em) {
+    .um .picker__nav--next {
+        padding-left: 0.5em !important;
+    }
+    .um .picker__nav--prev {
+        padding-right: 0.5em !important;
+    }
+}
+.um .picker--opened .picker__holder {
+    position: absolute;
+    top: -39.7vh !important;
+    left: -50vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+#um_field_12_user_password ,
+#um_field_12_username,
+.um-field-type_block,
+#um_field_um_password_id_username_b {
+    width: auto !important;
+}
+
+.uimob500 {
+    left: 25%;
+    top: 150px;
+    position: absolute;
+}
+
+.happyforms-styles .happyforms-part input:checked+.checkmark svg {
+    display: none !important;
+}
+
+#radio_1_option_1586604448426,
+#radio_1_option_1586604453977,
+#radio_1_option_1586604455188,
+#radio_1_option_1586604458732,
+#radio_1_option_1586604459380,
+#radio_1_option_1586604460061 {
+    .option-label {
+        display: inline-block;
+        background-color: #bcbcbc;
+        color: white;
+        border-radius: 8px;
+        padding: 10px 30px;
+        margin-bottom: 30px;
+        border: 1px solid #bcbcbc;
+        transition: all 0.3s;
+    }
+
+    .checkmark {
+        background-color: transparent;
+        background-color: transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        left: 0;
+        top: 0;
+        border: none;
+        z-index: 0;
+        transition: all 0.3s;
+    }
+
+    input:checked+.checkmark {
+        background-color: red !important;
+    }
+
+    .label {
+        color: white;
+    }
+}
+
+.happyforms-part-wrap {
+    width: 60%;
+    margin-left: 20%;    
+}
+
+#happyforms-40_radio_1-part {
+    .happyforms-part__el {
+        width: 50%;
+        margin-left: 31%;
+    }
+    
+    .happyforms-part__label {
+        display: block !important;
+        text-align: center !important;
+        margin-bottom: 50px;
+
+        .label {
+            color: #ed2727 !important;
+            padding: 40px 0 !important;
+            font-weight: bold !important;
+            font-size: 26px !important;
+        }
+    }
+}
+
+#happyforms-40_select_5-part {
+    .happyforms-custom-select {
+        width: 280px;
+        float: right;
+    }
+}
+
+#happyforms-40_radio_3-part {
+    .option-label {
+        padding: 50px;
+        transition: all 0.25s;
+        width: 300px;
+        height: 300px;
+    }
+
+    .happyforms-part__el {
+        margin-left: 7%;
+    }
+
+    input:checked+.checkmark {
+        border: 1px solid #ed2727;
+    }
+
+    .checkmark {
+        background-color: transparent;
+        background-color: transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        left: 0;
+        top: 0;
+        border: 1px solid #bcbcbc;
+        z-index: 0;
+        transition: all 0.3s;
+    }
+
+    #radio_3_option_1586604721205 {
+        position: relative;
+
+        .label {
+            color: #ed2727;
+            text-align: center;
+            padding: 40px 0;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        
+        &::before {
+            content: '5x per week / 20h';
+            color: #000;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 18px;        
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            content: '280€ / per month';
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #000;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    #radio_3_option_1586604728748 {
+        position: relative;
+
+        .label {
+            color: #ed2727;
+            text-align: center;
+            padding: 40px 0;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        
+        &::before {
+            content: '3x per week / 20h';
+            color: #000;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 18px;        
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            content: '192€ / per month';
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #000;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    #radio_3_option_1586604730063 {
+        position: relative;
+
+        .label {
+            color: #ed2727;
+            text-align: center;
+            padding: 40px 0;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        
+        &::before {
+            content: '2x per week / 20h';
+            color: #000;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 18px;        
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            content: '144€ / per month';
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #000;   
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+#happyforms-40_radio_4-part {
+    
+    .option-label {
+        padding: 50px;
+        transition: all 0.25s;
+        width: 300px;
+        height: 300px;
+    }
+
+    .happyforms-part__el {
+        margin-left: 21.4%;
+    }
+
+    input:checked+.checkmark {
+        border: 1px solid #ed2727;
+    }
+
+    .checkmark {
+        background-color: transparent;
+        background-color: transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        left: 0;
+        top: 0;
+        border: 1px solid #bcbcbc;
+        z-index: 0;
+        transition: all 0.3s;
+    }
+
+    
+
+    #radio_3_option_1586604721205 {
+        position: relative;
+
+        .label {
+            color: #ed2727;
+            text-align: center;
+            padding: 40px 0;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        
+        &::before {
+            content: '5x per week ';
+            color: #000;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 18px;        
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            content: '480€ / per level';
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #000;   
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    
+
+    #radio_4_option_1586712219101 {
+        position: relative;
+
+        .label {
+            color: #ed2727;
+            text-align: center;
+            padding: 40px 0;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        
+        &::before {
+            content: '3x per week ';
+            color: #000;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 18px;        
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            content: '540€ / per level';
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #000;   
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+#happyforms-40_checkbox_6-part {
+    //margin-top: 100px;
+
+    .happyforms-part-wrap {
+        display: block !important;
+        text-align: center !important;
+
+        &::before {
+            content: 'What days do you prefer';
+            color: #ed2727;
+            padding: 40px 0;
+            font-weight: bold;
+            font-size: 26px;
+            display: inline-block;
+        }
+    }
+    
+    .option-label {
+        display: inline-block;
+        padding: 25px;
+        background-color: #ed2727;
+
+        .label {
+            color: #fff !important;
+        }
+    }
+
+    .checkmark {
+        background-color: transparent;
+        background-color: transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        left: 0;
+        top: 0;
+        border: none;
+        z-index: 0;
+        transition: all 0.3s;
+    }
+
+    input:checked+.checkmark {
+        color: #000;
+        background-color: #bcbcbc !important;
+        box-shadow: 0px 0px 10px #acacac !important;
+    }
+}
+
+#happyforms-40_single_line_text_8-part,
+#happyforms-40_email_7-part,
+#happyforms-40_single_line_text_11-part {
+    .happyforms-part-wrap {
+        margin-left: 39% !important;
+    }
+}
+
+#happyforms-40_radio_12-part,
+#happyforms-40_single_line_text_10-part,
+#happyforms-40_single_line_text_9-part,
+#happyforms-40_date_13-part {
+    .happyforms-part-wrap {
+        margin-left: 0 !important;
+        margin-right: 39% !important;
+    }
+}
+
+
+#happyforms-40_date_13-part {
+    .happyforms-part__label {
+        margin-top: 13px;
+    }
+}
+
+#happyforms-40_radio_3-part,
+#happyforms-40_radio_1-part,
+#happyforms-40_checkbox_6-part {
+    margin-bottom: 130px;
+}
+
+.happyforms-part--submit {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.google {
+    img {
+        width: 35px!important;
+        height: auto;
+    }
+}

@@ -1,0 +1,338 @@
+.choose-wrapper {
+    text-align: center;
+    padding: 60px 0;
+
+    h1 {
+        color: $black;
+        font-weight: 700;
+        font-size: 28px;
+
+        span {
+            color: $red;
+        }
+    }
+
+    .progression-bar {
+        margin: 60px 0;
+        width: 80%;
+        margin-left: 10%;
+        height: 3px;
+        background-color: $gray-lightest;
+        position: relative;
+
+        &::after {
+            content: '';
+            height: 3px;
+            background-color: $red-dark;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .3s;
+            width: 18%;
+        }
+        
+        &.width30 {
+            &::after {
+                width: 30%;
+            }
+        }
+        
+        &.width55 {
+            &::after {
+                width: 55%;
+            }
+        }
+        
+        &.width78 {
+            &::after {
+                width: 78%;
+            }
+        }
+        
+        &.width100 {
+            &::after {
+                width: 100%;
+            }
+        }
+
+        span {
+            height: 15px;
+            width: 15px;
+            display: inline-block;
+            background-color: $gray-lightest;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &.circle-1 {
+                left: 0;
+                background-color: $red-dark;
+            }
+            
+            &.circle-2 {
+                left: 25%;
+            }
+
+            &.circle-3 {
+                left: 50%;
+            }
+
+            &.circle-4 {
+                left: 75%;
+            }
+
+            &.circle-5 {
+                left: 100%;
+            }
+
+            &.active {
+                background-color: $red-dark;
+            }
+        }
+    }
+
+    
+
+    .button-level {
+        display: inline-block;
+        background-color: $gray-lightest;
+        color: white;
+        border-radius: 8px;
+        padding: 10px 30px;
+        margin-bottom: 30px;
+        border: 1px solid $gray-lightest;
+        transition: all .3s;
+
+        &:hover {
+            border: 1px solid $red-dark;
+        }
+
+        &.active {
+            background-color: $red-dark;
+            border: 1px solid $red-dark;
+        }
+    }
+
+    .continue-button {
+        margin-top: 20px;
+        background-color: $red-dark;
+        border: none;
+        
+        &:hover {
+            background-color: $blue;
+            border: none;
+        }
+    }
+
+    .levels {
+        h2 {
+            font-size: 26px;
+            color: $red;
+        }
+        
+        .select-level {
+            margin: 40px 0;
+        }
+
+        p {
+            color: $black;
+            font-weight: 600;
+            margin-top: 20px;
+
+            a {
+                color: $red-dark;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    height: 2px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                    background-color: $red;
+                    transition: all .5s;
+                    transform-origin: left center;
+                    transform: scale(0);
+                }
+    
+                &:hover {
+    
+                    &::after {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+
+    .offer-wrapper {
+        .offer-item {
+            border: 1px solid $gray-lightest;
+            padding: 50px;
+            transition: all .25s;
+
+            &:hover {
+                border: 1px solid $red-dark;
+            }
+
+            &.active {
+                border: 1px solid $red-dark;
+            }
+        }
+        
+        p {
+            color: $black;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 42px;
+
+            span {
+                color: black;
+                font-size: 20px;
+            }
+        }
+
+        h3 {
+            color: $red;
+
+            span {
+                color: $black;
+            }
+        }
+    }
+
+    .register-form {
+        padding: 0 100px;
+
+        .sign-up-form {
+            height: 100%;
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            h1 {
+                color: $white;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            input,
+            select {
+                background-color: #edeeee;
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+                display: block;
+                width: 270px;
+                margin: 20px auto;
+
+                &::placeholder {
+                    color: rgba($color: $gray-lightest, $alpha: 1)
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .radio {
+                width: auto;
+                display: inline-block;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .button-register {
+                display: inline-block;
+                color: white;
+                border-radius: 10px;
+                border: none;
+                padding: 10px 107px;
+                background-color: $light-blue;
+                transition: all .3s;
+
+                &:hover {
+                    background-color: $blue;
+                }
+            }
+
+            p {
+                color: white;
+                font-size: 20px;
+                margin-top: 45px;
+                font-weight: 400;
+
+                a {
+                    color: white;
+                    transition: all .3s;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+
+    .days-wrapper {
+        margin: 100px 0;
+
+        ul {
+            margin: 50px 0;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+
+                a {
+                    display: inline-block;
+                    padding: 50px;
+                    background-color: $red;
+                    color: $white;
+
+                    &.active {
+                        color: $black;
+                        background-color: #edeeee;
+                        box-shadow: 0px 0px 10px #acacac;
+                    }
+                }
+            }
+        }
+    }
+
+    .teacher-wrapper {
+        text-align: center;
+
+        a {
+            display: inline-block;
+        }
+
+        h2 {
+            padding-top: 15px;
+            padding-bottom: 5px;
+            margin: 0;
+            color: $black;
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+            color: $gray-lightest;
+        }
+
+        img {
+            width: 100%;
+            height: 270px;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+}

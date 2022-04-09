@@ -1,0 +1,70 @@
+.contact-wrapper {
+    position: relative;
+    line-height: 0; 
+
+    iframe {
+        height: 80vh;
+        width: 100%;
+    }
+    
+    .contact {
+        position: absolute;
+        top: 0;
+        left: 20%;
+        color: white;
+        background-color: $red-dark;
+        height: 100%;
+        width: 200px;
+        padding: 80px 20px;
+        
+        @media(min-width: 992px) {
+            width: 300px;
+            padding: 100px 40px;
+        }
+
+        img {
+            width: auto;
+            height: 45px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            color: white;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-weight: 300;
+            text-align: left;
+        }
+
+        p {
+            font-weight: 600;
+            margin-bottom: 0;
+            line-height: 20px;
+        }
+
+        a {
+            color: white;
+            display: inline-block;
+            position: relative;
+
+            &::after {
+                content: '';
+                height: 2px;
+                width: 100%;
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+                background-color: $blue;
+                transition: all .5s;
+                transform-origin: left center;
+                transform: scale(0);
+            }
+
+            &:hover::after {
+                transform: scale(1);
+            }
+        }
+    }
+}

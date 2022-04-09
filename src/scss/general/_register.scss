@@ -1,0 +1,124 @@
+.sign-up-wrapper {
+    height: 100vh;
+
+    .row {
+        margin: 0;
+        height: 100%;
+
+        [class*='col-'] {
+            padding: 0;
+        }
+
+        .sign-up-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .sign-up-form {
+            background-color: $red-dark;
+            height: 100%;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            h1 {
+                color: $white;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            input,
+            select {
+                background-color: white;
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+                display: block;
+                width: 270px;
+                margin: 20px auto;
+
+                &::placeholder {
+                    color: rgba($color: #000, $alpha: .3)
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .button-register {
+                display: inline-block;
+                color: white;
+                border-radius: 10px;
+                border: none;
+                padding: 10px 107px;
+                background-color: $light-blue;
+                transition: all .3s;
+
+                &:hover {
+                    background-color: $blue;
+                }
+            }
+
+            p {
+                color: white;
+                font-size: 20px;
+                margin-top: 45px;
+                font-weight: 400;
+
+                a {
+                    color: white;
+                    transition: all .3s;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        .side-info {
+            margin: 60px 80px;
+            
+            h2 {
+                color: #000;
+                text-align: left;
+                padding: 10px 0;
+                margin: 0;
+
+                span {
+                    color: $red-dark;
+                }
+            }
+
+            img {
+                margin-top: 30px;
+                margin-bottom: 10px;
+                width: 60px;
+            }
+
+            p {
+                font-size: 14px;
+                width: 38%;
+            }
+        }
+    }
+
+    .row-inner {
+        margin: 0 20px;
+
+        [class*='col-'] {
+            padding: 0 20px;
+        }
+
+        @media(max-width: 992px) {
+            :first-child {
+                :last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
